@@ -2,7 +2,6 @@
 //  FCAppDelegate.h
 //  FlatColor
 //
-//  Created by Thomas Denney on 27/08/2013.
 //  Copyright (c) 2013 Programming Thomas. All rights reserved.
 //
 
@@ -11,5 +10,10 @@
 @interface FCAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSTextField *widthField;
+@property (weak) IBOutlet NSTextField *heightField;
+@property (weak) IBOutlet NSColorWell *colorWell;
+@property (weak) IBOutlet NSButton *generateRetina;
+- (IBAction)createAction:(id)sender;
 
 @end
